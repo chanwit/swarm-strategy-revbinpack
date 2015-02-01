@@ -78,6 +78,8 @@ func (s scores) Less(i, j int) bool {
 		jp = s[j]
 	)
 
+	// reverse comparison,
+	// so the whole cluster will be distributedly filled
 	return ip.score < jp.score
 }
 
